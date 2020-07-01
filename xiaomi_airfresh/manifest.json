@@ -1,0 +1,10 @@
+{
+    "domain": "dmairfresh",
+    "name": "Xiaomi Mijia Air Fresh",
+    "documentation": "",
+    "requirements": [],
+    "dependencies": [],
+    "codeowners": [
+        "@NikolayBorisov"
+    ]
+}
