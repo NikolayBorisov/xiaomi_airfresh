@@ -4,9 +4,9 @@ Model: dmaker.airfresh.a1
 
 ### HACS
 
-Can be installed via [HACS] (Home Assistant Community Store).
+Can be installed via [HACS](https://hacs.xyz/ Home Assistant Community Store).
 
-Just add this repository.
+Just add this [repository](https://github.com/NikolayBorisov/xiaomi_airfresh).
 
 ### Support
 
