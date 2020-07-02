@@ -124,18 +124,6 @@ SERVICE_TO_METHOD = {
     SERVICE_SET_DISPLAY_ON: {"method": "async_set_display_on"},
     SERVICE_SET_DISPLAY_OFF: {"method": "async_set_display_off"},
     SERVICE_SET_FILTER_RESET: {"method": "async_set_filter_reset"},
-
-    #    SERVICE_SET_CHILD_LOCK_ON: {"method": "async_set_child_lock_on"},
-    #    SERVICE_SET_CHILD_LOCK_OFF: {"method": "async_set_child_lock_off"},
-    #    SERVICE_RESET_FILTER: {"method": "async_reset_filter"},
-    # SERVICE_SET_FAVORITE_LEVEL: {
-    #    "method": "async_set_favorite_level",
-    #    "schema": SERVICE_SCHEMA_FAVORITE_LEVEL,
-    # },
-    # SERVICE_SET_FAN_LEVEL: {
-    #    "method": "async_set_fan_level",
-    #    "schema": SERVICE_SCHEMA_FAN_LEVEL,
-    # },
 }
 
 
@@ -333,11 +321,6 @@ class XiaomiAirFreshDevice(FanEntity):
         self._state_attrs = {ATTR_MODEL: self._model}
         self._skip_update = False
 
-        self._state_attrs = {
-            ATTR_MODEL: self._model,
-        }
-        self._skip_update = False
-
         self._available_attributes = AVAILABLE_ATTRIBUTES_AIRFRESH
         self._speed_list = OPERATION_MODES_AIRFRESH
         self._state_attrs.update(
@@ -493,10 +476,6 @@ class XiaomiAirFreshDevice(FanEntity):
     async def async_turn_off(self, **kwargs) -> None:
         """Turn the device off."""
         result = await self.send_raw_cmd("Turning the miio device off failed.", "set_power", [False])
-
-        if result:
-            self._state = False
-            self._skip_update = True
 
     async def async_set_speed(self, speed: str) -> None:
         """Set the speed of the fan."""
