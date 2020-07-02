@@ -4,7 +4,7 @@ Model: dmaker.airfresh.a1
 
 ### HACS
 
-Can be installed via [HACS](https://hacs.xyz/ Home Assistant Community Store).
+Can be installed via [HACS](https://hacs.xyz/).
 
 Just add this [repository](https://github.com/NikolayBorisov/xiaomi_airfresh).
 
@@ -27,11 +27,11 @@ Availiable Attributes:
 * mode
 
 Availiable Services:
-* airfresh_set_ptc_on / airfresh_set_ptc_off
-* airfresh_set_sound_on / airfresh_set_sound_off
-* airfresh_set_display_on / airfresh_set_display_off
-* airfresh_set_filter_reset
-* airfresh_set_favourite_speed (speed: 1-200)
+* fan.airfresh_set_ptc_on / fan.airfresh_set_ptc_off
+* fan.airfresh_set_sound_on / fan.airfresh_set_sound_off
+* fan.airfresh_set_display_on / fan.airfresh_set_display_off
+* fan.airfresh_set_filter_reset
+* fan.airfresh_set_favourite_speed (speed: 1-200)
 
 ### Configuration:
 
