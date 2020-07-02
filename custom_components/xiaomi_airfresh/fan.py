@@ -465,17 +465,13 @@ class XiaomiAirFreshDevice(FanEntity):
         """Turn the device on."""
         if speed:
             # If operation mode was set the device must not be turned on.
-            result = await self.async_set_speed(speed)
+            await self.async_set_speed(speed)
         else:
-            result = await self.send_raw_cmd("Turning the miio device on failed.", "set_power", [True])
-
-        if result:
-            self._state = True
-            self._skip_update = True
+            await self.send_raw_cmd("Turning the miio device on failed.", "set_power", [True])
 
     async def async_turn_off(self, **kwargs) -> None:
         """Turn the device off."""
-        result = await self.send_raw_cmd("Turning the miio device off failed.", "set_power", [False])
+        await self.send_raw_cmd("Turning the miio device off failed.", "set_power", [False])
 
     async def async_set_speed(self, speed: str) -> None:
         """Set the speed of the fan."""
