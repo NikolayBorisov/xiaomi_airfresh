@@ -3,7 +3,7 @@ Add support Xiaomi Mi Air Purifier A1 (MJXFJ-150-A1) (dmaker.airfresh.a1)
 
 ### HACS
 
-Can be installed via [HACS][hacs] (Home Assistant Community Store).
+Can be installed via [HACS] (Home Assistant Community Store).
 
 Just add this repository.
 
