@@ -1,5 +1,6 @@
 # xiaomi_airfresh
-Add support Xiaomi Mi Air Purifier A1 (MJXFJ-150-A1) (dmaker.airfresh.a1)
+Add support Xiaomi Mi Air Purifier A1 (MJXFJ-150-A1)
+Model: dmaker.airfresh.a1
 
 ### HACS
 
