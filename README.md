@@ -29,6 +29,8 @@ Just add this [repository](https://github.com/NikolayBorisov/xiaomi_airfresh).
 * mode
 
 **Availiable Services:**
+* fan.turn_on / fan.turn_off
+* fan.set_speed (speed: \[off | auto | sleep | favourite])
 * fan.airfresh_set_ptc_on / fan.airfresh_set_ptc_off
 * fan.airfresh_set_sound_on / fan.airfresh_set_sound_off
 * fan.airfresh_set_display_on / fan.airfresh_set_display_off
