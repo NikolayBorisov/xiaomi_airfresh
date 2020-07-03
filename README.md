@@ -2,7 +2,7 @@
 Add support Xiaomi Mi Air Purifier A1 (MJXFJ-150-A1)
 Model: dmaker.airfresh.a1
 
-*Temporary solution till official Home Assistant support*
+*Temporary solution till official Home Assistant and [python-miio](https://github.com/rytilahti/python-miio/issues/662) support*
 
 ### HACS
 
